@@ -74,7 +74,7 @@ void my_printf(const char *format, ...)
                 {
                         putchar(*p);
                 }
-                p++
+                p++;
         }
         va_end(args);
 }
