@@ -1,0 +1,71 @@
+PRINTF(3)                    Library Functions Manual                    PRINTF(3)
+
+NAME
+       _printf - produces output according to a format
+
+SYNOPSIS
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       The _printf function produces output according to the format string specified by format.
+       The format string contains ordinary characters (which are copied directly to the output)
+       and format specifiers (which begin with a percent sign '%' and specify how additional
+       arguments should be printed).
+
+       The function will return the number of characters printed (excluding the null byte), or
+       -1 if there is an error, such as when the format string is NULL.
+
+ARGUMENTS
+       format
+           A string containing the characters and format specifiers that determine how
+           subsequent arguments are formatted and printed.
+
+       ...
+           A variable number of arguments corresponding to the format specifiers. These can
+           be of any type, depending on the format specifier.
+
+FORMAT SPECIFIERS
+       Currently, the following format specifiers are supported by _printf:
+
+       %c   - Character.
+       %s   - String.
+       %d   - Decimal integer.
+       %i   - Integer.
+       %x   - Hexadecimal integer (lowercase).
+       %X   - Hexadecimal integer (uppercase).
+       %u   - Unsigned decimal integer.
+
+       Additional specifiers may be handled by the handle_specifier function or other parts
+       of the program.
+
+RETURN VALUE
+       The _printf function returns the total number of characters printed (excluding the null
+       byte). If the format string is invalid or NULL, the function returns -1.
+
+EXAMPLES
+       Example 1:
+           _printf("Hello, World!\n");
+
+           Output:
+           Hello, World!
+
+       Example 2:
+           _printf("Number: %d\n", 42);
+
+           Output:
+           Number: 42
+
+SEE ALSO
+       printf(3), va_list(3)
+
+BUGS
+       There may be issues with unsupported format specifiers or edge cases not handled by
+       the current implementation. Please refer to the code for detailed specifier management.
+
+AUTHOR
+       Written by William Alvarado, Diego Mercado.
+
+COPYRIGHT
+       Copyright (c) 2024 [Your Organization or License]. All rights reserved.
+
+
