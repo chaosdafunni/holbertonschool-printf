@@ -22,9 +22,9 @@ Using `_printf` is straightforward. Simply include the necessary header file, ca
 #include "_printf.h"
 
 int main() {
-    int num = 42;
-    char character = 'A';
-    char *str = "Hello, world!";
+    int num = 24;
+    char character = 'H';
+    char *str = "Hello world!";
 
     _printf("Number: %d\n", num);
     _printf("Character: %c\n", character);
