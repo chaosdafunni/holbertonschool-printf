@@ -32,8 +32,9 @@ int main() {
 
     return 0;
 
-## Authors
-William Alvarado: https://github.com/chaosdafunni
-Diego Mercado: https://github.com/Dmc254
 }
 
+## Authors
+
+- **William Alvarado**: [GitHub](https://github.com/chaosdafunni)
+- **Diego Mercado**: [GitHub](https://github.com/Dmc254)
