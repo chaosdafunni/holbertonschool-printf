@@ -31,5 +31,9 @@ int main() {
     _printf("String: %s\n", str);
 
     return 0;
+
+## Authors
+William Alvarado: https://github.com/chaosdafunni
+Diego Mercado: https://github.com/Dmc254
 }
 
